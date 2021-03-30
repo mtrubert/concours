@@ -1,10 +1,8 @@
 /**
  * Typographie responsive (Mobile First)
    ========================================================================
- * Les valeurs de taille de police suggérées ici sont à titre indicatif.
- * À ajuster selon la direction visuelle et le choix de polices de caractères.
- *
- * @author Prénom Nom courriel
+
+ * @Manon Trubert mtrubert.news@gmail.com
  *
  * TABLE DES MATIÈRES
  * Polices
@@ -25,12 +23,7 @@
 
 
 /* Polices */
-/* Selon le projet, il est souvent préférable d'utiliser le lien @import des Google Fonts
- * plutôt que de servir directement les polices de caractères à l'aide d'instructions @font-face
- * et d'un dossier de polices dans la structure de répertoires.
- * La méthode ci-dessous vise à offrir dans l'ordre de priorité les 3 formats possibles pour
- * assurer la meilleure compatibilité.
- */
+
 /*polices liées*/
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap');
@@ -43,10 +36,10 @@ h3,
 .h3,
 h4,
 .h4 {
-    font-family: "NewsCycle-bold", sans-serif ;
+    font-family: 'News Cycle', sans-serif ;
 }
 body{
-    font-family: NewsCycle, sans-serif ;
+    font-family: 'News Cycle', sans-serif;;
 }
 
 
