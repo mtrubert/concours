@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /**
- * @author Prénom Nom courriel
+ * @author Manon Trubert mtrubert.news@gmail.com
  *
  * TABLE DES MATIERES
  * Normalize
@@ -24,14 +24,124 @@
 /* Utilitaires
    ========================================================================== */
 
-
+@import url(_utilitaires.css);
 /* Charte typographique
    ========================================================================== */
-
+@import url(_typo.css);
 
 /* Grille
    ========================================================================== */
+@import url(_grille.css);
 
-
+/* Formulaire
+========================================================================== */
+@import url(_form.css);
 /* Mise en page
    ========================================================================== */
+body{
+    background: linear-gradient(#8ec1b1, #e7ecd9);
+}
+/*.conteneur{
+    background: #f5f5f5;
+}*/
+@media(max-width: 600px) {
+    ul,
+    .monuments {
+        list-style: none;
+        display: block;
+    }
+}
+ul{
+    list-style: none;
+}
+
+.bandeau{
+    padding: 0px;
+}
+img{
+    width: 100%;
+    padding: 4px;
+    margin: 0px;
+}
+
+
+.fieldset_principal{
+    background-color: var(--couleur-background);
+    border: 0;
+    border-radius: 10px;
+}
+fieldset{
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+}
+.fieldset_secondaire{
+    border: 2px solid black;
+}
+h1{
+    width: 100%;
+    padding-left: 20px;
+}
+h2{
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
+h3{
+    margin-top: 0px;
+}
+.checkbox,
+.soumettre{
+    padding: var(--padding);
+}
+aside{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+select{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+main.rangee{
+    flex-wrap: wrap;
+}
+button{
+    background-color: #b3d6bc;
+    border-radius: 10px;
+}
+input{
+    border-radius: 5px;
+}
+.erreur{
+    color: var(--couleur-texte-erreur)
+}
+
+.copyrights{
+    text-align: center;
+}
+@media(min-width: 600px){
+.aside_form {
+    display:flex;
+}
+    li{
+        text-align: center;
+    }
+}
+.checkbox,
+.soumettre{
+    display: flex;
+}
+/*interactivité*/
+
+:focus {
+    outline: #349194 auto 5px;
+}
+input[type=radio] + label img{
+    -webkit-filter: grayscale(100%);
+}
+input[type=radio]:hover + label img,
+input[type=radio]:focus + label img{
+    -webkit-filter: grayscale(0%);
+}
+input[type=radio]:checked + label img{
+    border: 1px solid black;
+}

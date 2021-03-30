@@ -4,6 +4,10 @@
 /****** Variables (peuvent être utilisées dans tous les fichiers) *******/
 :root {
     --couleur-texte: #000;
+    --couleur-texte-erreur: #ff0000;
+    --couleur-background: lightgrey;
+    --padding: 10px;
+    --border-radius: 20px;
 }
 
 /*** Clearfix ***/

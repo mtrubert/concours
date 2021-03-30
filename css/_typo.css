@@ -31,18 +31,10 @@
  * La méthode ci-dessous vise à offrir dans l'ordre de priorité les 3 formats possibles pour
  * assurer la meilleure compatibilité.
  */
-@font-face {
-    font-family: NewsCycle-bold;
-    src:url(../polices/News_Cycle/NewsCycle-bold.woff2)format('woff2'),
-    url(../polices/News_Cycle/NewsCycle-bold.woff) format('woff'),
-    url(../polices/News_Cycle/NewsCycle-bold.ttf) format('truetype');
-}
-@font-face {
-    font-family: NewsCycle;
-    src:url(../polices/News_Cycle/NewsCycle-Regular.woff2)format('woff2'),
-    url(../polices/News_Cycle/NewsCycle-Regular.woff) format('woff'),
-    url(../polices/News_Cycle/NewsCycle-Regular.ttf) format('truetype');
-}
+/*polices liées*/
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@700&display=swap');
+
 h1,
 .h1,
 h2,
@@ -51,7 +43,7 @@ h3,
 .h3,
 h4,
 .h4 {
-    font-family: NewsCycle-bold, sans-serif ;
+    font-family: "NewsCycle-bold", sans-serif ;
 }
 body{
     font-family: NewsCycle, sans-serif ;
@@ -107,13 +99,13 @@ h2,
 @media (min-width: 600px) {
     h2,
     .h2 { /* = 32px */
-        font-size: 3.2rem;
+        font-size: 2.8rem;
     }
 }
 @media (min-width: 800px) {
     h2,
     .h2 { /* = 36px */
-        font-size: 3.6rem;
+        font-size: 3.3rem;
     }
 }
 
@@ -124,13 +116,13 @@ h3,
 @media (min-width: 600px) {
     h3,
     .h3 {  /* = 24px */
-        font-size: 2.4rem;
+        font-size: 1.4rem;
     }
 }
 @media (min-width: 800px) {
     h3,
     .h3 { /* = 30px */
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
 }
 
